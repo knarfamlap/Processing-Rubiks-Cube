@@ -12,7 +12,7 @@ void setup() {
 void draw() {
   background(155);
   translate(width / 2, height / 2, -1000);
-  
+  pushMatrix();
  /*
   * Controllers:
   * W = Up rotation in the X axis
@@ -42,5 +42,6 @@ void draw() {
    rotateX(rotateUpDown);
    // Updates Rotation in Y orientiation
    rotateY(rotateLeftRight);
-   //Cube cube = new Cube(sizeOfCube);
+   Cube cube = new Cube(sizeOfCube);
+   popMatrix();
 }
